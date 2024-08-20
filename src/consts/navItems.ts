@@ -1,6 +1,6 @@
 export const navItems = [
   { key: "nav_about", href: "/about", label: "关于我", target: "_self" },
-  { key: "nav_articles", href: "/articles", label: "知识库", target: "_self" },
+  { key: "nav_articles", href: "/articles/", label: "知识库", target: "_self" },
   {
     key: "nav_wp",
     href: "https://www.imiker.com/learning_outcome_index.html#/",

@@ -43,23 +43,6 @@ const nextConfig = {
       },
     ],
   },
-  async redirects() {
-    return oldPostSlugs
-      .filter((slug) => slug.trim() !== "" && slug !== "articles")
-      .map((slug) => ({
-        source: `/${slug}`,
-        destination: `/articles/${slug}`,
-        permanent: true,
-      }))
-      .concat([
-        {
-          source: "/specs101",
-          destination:
-            "https://www.hostg.xyz/aff_c?offer_id=517&aff_id=40495&url_id=3965&source=cloud_website",
-          permanent: false,
-        },
-      ]);
-  },
 };
 
 const withMDX = nextMDX({
