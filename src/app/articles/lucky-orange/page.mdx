@@ -1,0 +1,523 @@
+import { ArticleLayout } from "@/components/ArticleLayout";
+import { Button } from "@/components/Button";
+import Toc from "@/components/Toc";
+
+export const article = {
+  author: "颜sir",
+  date: "2022-06-18",
+  title: "观察到客户毛细血管 – Lucky Orange全面指南",
+  description:
+    "分析客户行为，能加速网站实现询盘自由。",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => <ArticleLayout article={article} {...props} />;
+
+好的，我会把文章中的所有图片链接替换为正确的格式。以下是替换后的文章内容：
+
+```markdown
+分析客户行为，能加速网站实现询盘自由。
+
+这篇帖子的主角是[Lucky Orange](https://www.xunpanziyou.com/go/lucky-orange/)，一个我和老汪都觉得特别好用的分析工具。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-4092-2020-03-28-17-39-23.png" alt="image-1643x924" width={1643} height={924} />
+
+如果你也希望“录客户的屏”，看看客户在网站上到底做了什么，那不妨仔细阅读这篇帖子，在网站上装个Lucky Orange感受“上帝视角”的威力。
+
+<Toc toc={toc} />
+
+## Lucky Orange能干嘛呢？
+
+它能做的事太多了，先来几张截图感受下它的强大：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-8726-2020-03-27-15-53-47.png" alt="image-1189x732" width={1189} height={732} />
+
+我在我个人博客挂了没几天，Lucky Orange就帮我录制了500+个视频，这500多个人在我网站点击了什么，看了哪些页面，填了哪些表单，我只要想知道，点击“Play”就能回放。
+
+再来看这张图：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-4814-2020-03-27-16-01-44.png" alt="image-853x323" width={853} height={323} />
+
+这是我个人博客的实时用户，一共有四个人，我只要点击“Live View”，就能看到ta当前在网站做了什么，只要点击“Ask to Chat”，就能和他在线聊天。
+
+再看这张图：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-1659-2020-03-27-15-58-39.png" alt="image-1118x725" width={1118} height={725} />
+
+用户在网站上的点击会汇总成一张“热力图”，我立马就能知道，哪里的点击多，哪里的点击少，哪里明明不可以点击，但用户却拼命点击。
+
+你想象一下，如果把这些功能运用到你自己网站，会对促成下单有多大帮助？
+
+大体知道了Lucky Orange的作用，我来帮你总结下Lucky Orange的功能，具体有以下几点：
+
+1. 录屏：客户在我们网站点了什么，鼠标是怎么移动的，都可以录下来；
+2. 实时：用户到网站上后，Lucky Orange会有提醒，我们能看到客户的一举一动；
+3. 聊天：Lucky Orange内置的聊天工具，完全可以替代Tidio了，而且这款聊天工具和实时功能结合起来，威力巨大，比如客户在我们口罩页面徘徊了5分钟还没发询盘，我们就可以邀请他在线聊天，推动他下单；
+4. 打标签：可以给客户的行为打标记，比如发过询盘的用户，我们就能用Lucky Orange打个“leads”的标签，方便我们重点核查；
+5. 广告标记：可以和谷歌广告完美结合，客户是从哪个关键词进来的一目了然；
+6. CRM：可以和Hubspot融合，在hubspot的后台能直接打开客户的行为视频做分析；
+7. 离开弹窗：客户鼠标打算关闭网页时，就出现弹窗提示；
+8. 投票：出现几个投票选项，用于做用户调研；
+9. 热力图：分析客户的点击，以热力图形式呈现；
+
+上面是我认为Lucky Orange最强大的几个功能，也是我日常做行为分析高频使用的功能，Lucky Orange还有很多细碎冷门的功能我就不一一列举了，等你使用了可以慢慢挖掘。
+
+## 为什么选Lucky Orange？
+
+我用过的行为分析工具有很多，比如：
+
+1. HotJar
+2. CrazyEgg
+3. FullStory
+
+但这些工具要么太贵，要么就是功能实在有限，以我另一个常用工具FullStory举例，它的免费版本确实不错，而且支持的用户行为也多，但它的后台太凌乱了。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-8617-2020-03-27-16-18-50.png" alt="image-unknown" width={400} height={400} />
+
+而且Fullstroy一个月仅能分析1000次会话，更不支持自定义事件标签。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-1285-2020-03-27-16-20-32.png" alt="image-1605x924" width={1605} height={924} />
+
+后来免费版本用得实在不爽，我就不自量力地咨询了它的企业版，结果：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-4171-2020-03-27-16-13-39.png" alt="image-1092x910" width={1092} height={910} />
+
+额……告辞。
+
+其他的行为分析工具就更不用说了，功能比Lucky Orange强大的，比它贵一截，比它便宜的，用起来和吃苍蝇一样。
+
+所以综合来讲，Lucky Orange是我目前为止用过性价比最高的工具，非常能打，没有之一。
+
+## Lucky Orange会拖慢网站速度吗？
+
+理论上来说，加载任何外部JS代码都会影响网站打开速度，特别是GTmetrix上的分数肯定有影响。
+
+但是，抛开剂量谈毒性就是耍流氓，我特意查了下Lucky Orange在**无痕浏览器**的加载速度（避免缓存影响）：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-9864-2020-03-27-23-57-17.png" alt="image-924x1643" width={924} height={1643} />
+
+从图里看出，Lucky Orange主要有两个JS文件在起作用，一个是图中的w\.js，另一个则是clickstream.js，而且两条JS文件都是来自于亚马逊的云端CDN。
+
+从时间轴上看，这两个文件和其他文件几乎是并行加载出来的，所以对速度的影响，可以说微乎其微。
+
+毕竟两个文件加起来总共才100Kb，能让我们网站慢个半秒已经是顶了天了，所以讲装了Lucky Orange和没装Lucky Orange，给客户的感觉几乎没变化。
+
+毕竟在高速公路上，一辆车跑120码，另一辆车跑121码，坐在车里的乘客是感受不出两辆车的区别的。
+
+## 如何注册Lucky Orange？
+
+注册简单，不过这里有个坑，很多人一开始会遵从Lucky Orange的建议选错套餐。
+
+Lucky Orange有个版本是10美金/月的，适用于单个网站，有个版本是20美金/月的，适用于3个网站。
+
+我建议你最开始上手都从10美金/月的套餐开始，并且先试用，试用感觉不错再买。
+
+正确的购买链接如下：
+
+[Lucky Orange官网](https://www.xunpanziyou.com/go/lucky-orange/)
+
+进入价格页面后点击下图位置按键：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-5711-2020-03-28-10-24-33.png" alt="image-1643x924" width={1643} height={924} />
+
+后续的注册流程就不说了，很简单，填写用户名和密码就行。
+
+注册好之后，Lucky Orange会自动给你弹出来一段跟踪代码，如果没有弹出来也不要紧，点击下图位置的tracking code：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-1063-2020-03-28-10-27-02.png" alt="image-1643x924" width={1643} height={924} />
+
+把它保存到记事本，后面我们安装到网站时会用到。
+
+## 如何安装Lucky Orange？
+
+安装挺简单的，我介绍三种安装方式，分别对应了WordPress网站，非WordPress网站和熟悉GTM工具的人。
+
+### WordPress插件
+
+注册好Lucky Orange之后，在插件页面搜索“Lucky Orange”，会出来下面这个插件，安装并激活：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-7720-2020-03-28-10-28-41.png" alt="image-1643x924" width={1643} height={924} />
+
+然后在WordPress的左侧找到Lucky Orange的标签页，在标签页填入账户密码即可：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-1859-2020-03-28-10-46-29.png" alt="image-1643x924" width={1643} height={924} />
+
+### 非WordPress网站
+
+如果你的网站是非WordPress的网站，那就可以将Lucky Orange的跟踪代码插入到网站的head里。
+
+比如wix、shopify等，都是有地方可以放tracking代码的，如果不是平台网站，而是建站公司帮你做的网站，那就可以让建站公司代劳。
+
+最后只要保证，你网站的每个页面的head中都是下图这样就行：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-1092-2020-03-28-10-50-32.png" alt="image-1643x924" width={1643} height={924} />
+
+这个页面是怎么看的呢？只要在网站首页空白处，右键点击“查看网页源代码”就能显示出来：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-9382-2020-03-28-10-57-00.png" alt="image-1643x924" width={1643} height={924} />
+
+建站公司帮做网站的朋友注意，如果你的网站头并非由统一head文件控制，那很有可能除了首页其他页面一概不能统计。
+
+那这种情况你就要点到内容好好看下内页是不是有统计代码了，如果内页没有，那就要催促建站公司在所有页面都插入这段跟踪代码。
+
+### GTM植入
+
+如果你知道怎么用GTM，那就插入Lucky Orange的跟踪代码就很方便了，在GTM的后台，点击新建代码：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-6552-2020-03-28-10-59-26.png" alt="image-1643x924" width={1643} height={924} />
+
+然后添加“自定义代码”：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-9926-2020-03-28-11-00-08.png" alt="image-1643x924" width={1643} height={924} />
+
+将Lucky Orange的tracking code粘贴进去：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-8963-2020-03-28-11-02-12.png" alt="image-1643x924" width={1643} height={924} />
+
+触发条件选“All Pages”：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-8945-2020-03-28-11-01-33.png" alt="image-1643x924" width={1643} height={924} />
+
+最后把名字命名为“Lucky Orange – PV – Global”（意思是，全局生效的Lucky Orange页面浏览统计代码，这是我的命名习惯），然后保存。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-2833-2020-03-28-11-04-08.png" alt="image-1643x924" width={1643} height={924} />
+
+最后点击右上角的“提交”即可：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-2885-2020-03-28-11-04-58.png" alt="image-1643x924" width={1643} height={924} />
+
+## 如何验证已安装？
+
+现在安装好了Lucky Orange，为了保证Lucky Orange生效，需要验证它确确实实成功安装到了我们网站上，我两种推荐验证方式。
+
+### 肉身尝试
+
+打开自己无痕浏览器，登录自己网站任意页面（或者手机打开也行）：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-9873-2020-03-28-11-08-37.png" alt="image-1643x924" width={1643} height={924} />
+
+等待10秒以上，在Lucky Orange的后台点击“Live Visitor”，核对Lucky Orange显示的当前所在页面是不是你现在访问的页面，同时点击“Live View”：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-1659-2020-03-28-11-12-32.png" alt="image-1643x924" width={1643} height={924} />
+
+这时，如果你发现你的一举一动都可以在Lucky Orange中看到，你页面滑动到哪儿，Lucky Orange后台就滑动到哪儿，就说明Lucky Orange的安装成功了。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-2084-2020-03-28-11-14-22.png" alt="image-1643x924" width={1643} height={924} />
+
+### 代码验证
+
+打开自己网站任意页面，右键空白处，点击“检查”：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-3916-2020-03-28-11-15-47.png" alt="image-1643x924" width={1643} height={924} />
+
+进入浏览器的“Console”选项卡，并在下方空白处输入console.log(__lo_site_id)：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-2574-2020-03-28-11-17-24.png" alt="image-1643x924" width={1643} height={924} />
+
+如果浏览器能返回一串数字，就说明Lucky Orange已经成功安装。
+
+## 界面
+
+Lucky Orange的后台很简洁（比我之前用的Fullstory简洁太多），重要功能都在导航栏上，如下图：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-9952-2020-03-28-11-27-42.png" alt="image-1643x924" width={1643} height={924} />
+
+其中：
+
+1. Operator: 目前在Lucky Orange统计范围内的网站（网站名字等都可以改）；
+2. Dashboard: 能浏览大概数据的地方；
+3. Live Visitors: 可以查看实时用户，观察现在在网站上的客户，他们在做什么；
+4. Recordings: 所有录屏都会集中放在这里，这个页面用得非常多，我们至少会在这个页面停留80%以上的时间；
+5. Chat: 邀请客户在线聊天后，就会在这里和客户对话，同时这里也会保存历史所有的聊天记录；
+6. Polls: 可以在这里生成并管理用户调研表，是个冷门功能；
+7. Heatmaps: Lucky Orange会统计所有用户的点击，并在这个页面帮我们生成热力图，只要在这个页面输入网站的地址就能做热力图分析；
+8. Form Analytics: 做表单分析的地方，可以把有询盘功能的页面地址填入进入，Lucky Orange会分析用户填写表单的行为；
+9. 聊天功能: 如果想让网站的右下角始终挂一个在线聊天的小工具，那就需要点击这里，开启聊天工具的功能，推荐你人在线的时候开启，否则客户点开了聊天工具找不到人，用户体验不太好；
+10. 设置: Lucky Orange零零碎碎的设置都能在这里找到。
+
+### 录屏界面
+
+录屏功能是Lucky Orange的灵魂，这个界面详细讲下。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-2620-2020-03-28-12-35-59.png" alt="image-1643x924" width={1643} height={924} />
+
+1. 播放：点击后进入录屏界面
+2. 用户IP：有时候会有，如果没有标题，很有可能是搜索引擎的蜘蛛
+3. 标签：可以自己手动加，也可以结合事件添加
+4. 互动量：蓝色代表没多少互动，红色代表有很多互动事件，绿色则鉴于两者之间
+5. 停留时间：字面意思
+6. 着陆页：用户进入我们网站的第一个页面，也可以叫登录页，行话是“LP”；
+7. 离开页：用户在哪个页面离开网站，如果某页面离开率特别高，就要当心；
+8. 来源：可以显示出客户是通过搜索过来的，还是通过付费广告过来的，还是直接输入了网址过来的；
+9. 键盘行为：如果有这个标志，说明用户在浏览期间使用了键盘；
+10. 星标：可以把某个值得反复看的录屏星标起来，方便后面查找；
+
+熟悉了这个界面后，就可以点击某条记录进去做分析了。
+
+首先说大原则，我们做数据分析，并不是去分析正常行为的，正常行为除了能增加我们的自恋程度外没有太多意义。
+
+我看很多人用Lucky Orange就喜欢沉迷在观察“正常行为”中，比如用户正常的浏览，正常的点击，正常的页面跳转……但这些都没什么价值。
+
+从中庸的数据里很难发现问题，只有在极端数据中检索，才能快速定位问题。
+
+要分析，就要分析那些不正常的点击，不正常的页面跳转和不正常的页面浏览时长，比如：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-4057-2020-03-28-12-23-05.png" alt="image-1643x924" width={1643} height={924} />
+
+以上行为是很特殊的，归结起来，我比较喜欢看这几类数据：
+
+1. 很短的页面浏览时长，代表用户进入就退出了；
+2. 时间很长，活动很少，代表用户进来后对内容似乎不感兴趣；
+3. 活动量异常巨大，有可能说明用户反复尝试点击某个点不了的东西；
+4. 有键盘输入行为，说明客户填写了信息，有可能是订阅了我们邮件，或者给我们发送了询盘；
+
+知道要看什么之后，再来说下在录屏界面有什么重要功能。
+
+当我们分析用户的录屏时，最常用的功能如下：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-9511-2020-03-28-12-14-32.png" alt="image-1643x924" width={1643} height={924} />
+
+1. 播放暂停键，字面意思；
+2. IDLE选项，可以在这里选择跳过用户的“静止”时间，只分析用户的动态行为，也节省我们时间；
+3. 播放速度，可以从0.5倍速到10倍速之间做选择，结合前文，正常数据我会10倍速扫完，看有没有离谱行为，不正常数据我会开正常速度仔细观察；
+4. 播放进度，可以点击进度条，反复观看某些重要行为；
+5. 热力图，可以把用户的单点击行为拉出来生成一张热力图（我不常用）。
+
+这个界面相当重要，因为这是Lucky Orange频率最高的页面，没有之一。
+
+## 聊天功能
+
+这个功能对于投放广告的朋友很有用，因为你的流量都是真金白银买来的，能转化一点是一点，顺便了解下用户感受。
+
+当然即使你不投广告，我也推荐你多用，因为有个真实存在的人在网站背后聊天，是能加强客户对网站的信任的。
+
+### 如何启用聊天功能
+
+Lucky Orange在正常情况下不会在我们网站上加载聊天工具，你只有点击了下图位置的按键，才能让聊天工具出现：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-5088-2020-03-28-15-13-52.png" alt="image-1643x924" width={1643} height={924} />
+
+点击之后，按键会变成绿色，同时，网站的右下角也会出现聊天工具：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551528-9156-2020-03-28-15-17-55.png" alt="image-1643x924" width={1643} height={924} />
+
+用户点击，或者我们主动要求，都可以开始对话，如果是主动邀请，在Lucky Orange的后台就会有弹窗提示：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551544-6051-2020-03-28-15-18-56.png" alt="image-1643x924" width={1643} height={924} />
+
+然后就可以和客户正常聊天了，和使用QQ或微信一样方便：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551545-6745-2020-03-28-15-21-24.png" alt="image-1643x924" width={1643} height={924} />
+
+如果不打算继续在线聊天了，再次点击按键右上角的按键关掉工具就行。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551545-6268-2020-03-28-15-22-51.png" alt="image-1643x924" width={1643} height={924} />
+
+### 聊天功能设置
+
+聊天窗口默认是黑色，文案也比较呆板，这些都可以在后台调：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551546-1550-2020-03-28-15-30-45.png" alt="image-1643x924" width={1643} height={924} />
+
+其中3、4、5是聊天功能的重要设置页面，我一个个解释下它们的功能：
+
+**Colors, Styles & Text：**在这个页面能调整聊天窗口的主色和文案，一般建议和网站的主色保持一致；
+
+**Canned Responses：**可以在这个页面点击“create”就可以定制话术了，方便和客户对话时，遇到常见问题就把话术迅速发过去。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551547-3069-2020-03-28-15-36-40.png" alt="image-1643x924" width={1643} height={924} />
+
+比如打招呼的文案是“Hello there, this is Pew York, the CEO of PandaHeadset, are you interested in any products here? ”，然后把标签设置成“Hi”：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551547-5776-2020-03-28-15-38-14.png" alt="image-1643x924" width={1643} height={924} />
+
+然后和客户聊天时，只要输入一个“#”，Lucky Orange就会自动弹出所有话术：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551548-3689-2020-03-28-15-39-57.png" alt="image-1643x924" width={1643} height={924} />
+
+**Pre-Chat Questions：**可以让用户主动发起聊天前，先回答一些问题，比如让他先填入姓名和邮箱。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551549-6706-2020-03-28-15-45-35.png" alt="image-1643x924" width={1643} height={924} />
+
+这个选项我觉得是双刃剑，一方面，确实可以收集到更多的客户邮箱，但另一方面，对于一些懒客户来说，他们可能看到问名字和邮箱直接就关掉了。
+
+如果你网站流量大，那这个功能很有用，因为还能帮你筛选下意向高的客户，如果流量不大，那就没必要开了，我们完全可以在和客户聊天聊得差不多了，再点对点问他要邮箱和名字。
+
+## 标记
+
+很多录屏都能反应出问题，比如客户多次点击同一个按键，比如客户反复提交询盘表单等，都很有代表性。
+
+对于这种录屏素材，我们就应该打上标签，让我们时刻找到它们做深度分析。
+
+这就要用到Lucky Orange的标记功能了。
+
+标记功能是Lucky Orange的一大特点，学会怎么给客户加tag，那不仅能在为后续的Lucky Orange漏斗转化分析做准备，还可以快速筛选客户，节省时间。
+
+在Lucky Orange中有三种标记方法：
+
+1. 手动添加：虽然是个笨方法，但胜在不用做任何设置，也不用懂任何技术；
+2. Lucky Orange内置方法添加：很便捷，也能实现自动化，可惜只能标记页面；
+3. 触发式添加：高端玩家使用Lucky Orange的灵魂所在，能标记任何行为，但有一些门槛，要学会使用GTM；
+
+下面一个个掰开来说。
+
+### 手动添加
+
+在recodings界面点击“Click to Tag”就好了：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551550-6151-2020-03-28-15-57-23.png" alt="image-1643x924" width={1643} height={924} />
+
+想添加什么标签随意，但为了方便后续管理，不至于面对一大堆莫名其妙的标签犯愁，我建议你开始就做好标签规划，先建立个标签库。
+
+比如先规定“leads”、“chat”、“error”、“loop”等等，分别对应了“发了询盘的客户”，“聊过天的客户”，“页面出严重问题的客户”和“重复点击某元素的客户”。
+
+规范好标签库之后，那去给客户打标记，就严格从标签库了取tag用，而不要天马行空地想加什么就加什么。
+
+在这上面我曾犯过严重错误，比如在之前没有标签库意识的时候，我标记发过询盘的客户可能会有下面这些标签：
+
+* lead
+* leads
+* quote
+* QUOTE
+* client who send a form
+* ……
+
+你能想象我后期做数据分析到底有多痛苦么，我必须先把无数个标签理顺，才能从杂乱的数据中艰难地做分析。
+
+所以我建议你一开始就建立好标签库，克制地使用标签。
+
+### Lucky Orange内置标记
+
+点击左上角的“Behavior Tag Rules”，就能使用Lucky Orange天生自带的自动标记功能：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551550-4186-2020-03-28-16-03-54.png" alt="image-1643x924" width={1643} height={924} />
+
+点击“Add New Rule”添加规则：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551551-4137-2020-03-28-16-06-04.png" alt="image-1643x924" width={1643} height={924} />
+
+按照下图所示规律添加打标签的规则即可：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551552-7243-2020-03-28-16-09-15.png" alt="image-1643x924" width={1643} height={924} />
+
+因为Lucky Orange自带的标记功能只能给进入过某页面的客户打标签，所以，我们不妨给“quote页面”、“thank-you页面”这类功能性页面打标签。
+
+比如我想给到达过thank-you页面的人打标签，那我就可以这样填：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551553-5830-2020-03-28-16-14-31.png" alt="image-1643x924" width={1643} height={924} />
+
+为什么要标记thank-you页面这涉及到另一个话题——统计转化率。
+
+但长话短说：标记thank-you页面，就相当于标记了发过询盘的客户。
+
+比如客户成功发送了一封询盘，我们可以控制表单提交后，让用户跳转到thank-you页。
+
+这不就代表，thank-you页有多少访问量，网站就收到过多少封询盘吗？
+
+> 注意：数据肯定不精准，有些发成功就关页面的客户，你拿他没办法，所以实际数据会比理论数据低一些。
+
+而Lucky Orange的基础功能，是可以捕捉到客户访问过thank-you页的，所以给这类访问过thank-you页面的客户打标签，就相当于是给发过询盘的客户打标签。
+
+### 触发式标记
+
+注意，这一小节对小白非常不友好，你完全可以跳过。
+
+Lucky Orange内置的标记功能，仅能捕捉页面访问（对小白来说，完全够用），而不能捕捉复杂的交互动作。
+
+所以如果你略懂技术，且不满足Lucky Orange内置的简单标记功能，那就可以使用Lucky Orange全自动的标记方法。
+
+标记代码如下：
+
+```html
+<script>
+  window._loq = window._loq || []; // 保证Lucky Orange收集自定义数据，下面三行任选，这一段必须有
+  window._loq.push(["tag", "quote"]); // 自动标记事件，标签可以叠加
+  window._loq.push(["tag","quote", true]); // 末尾加个true，表明会将录屏素材自动星标
+  window._loq.push(["tag", "quote", false, true]); // 一个false一个true，代表了不会星标，并覆盖现在所有的标签
+</script>
+```
+
+而且如果你学过询盘课，知道怎么用GTM，那和Lucky Orange的自动标记功能结合起来用，你就会发现有多方便多爽了，完全可以不改动网站一行代码的前提下，把上述行为代码植入进入。
+
+首先进入GTM，添加一个我们想要的触发器：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551554-1031-2020-03-28-16-31-21.png" alt="image-1643x924" width={1643} height={924} />
+
+然后添加如下代码：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551554-8227-2020-03-28-16-33-33.png" alt="image-1643x924" width={1643} height={924} />
+
+搞定后发布即可，整个过程中，网站的源代码一行都没改动，是不是超级方便？
+
+**掌握了标记自定义事件，就相当于掌控了雷电**，因为我们想怎么标记就怎么标记。
+
+比如，客户点击过“Add to Quote”的按键之后，就给他加个“quote”的标记，那在Lucky Orange的后台，就能看到一大堆有quote标签的用户。
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551542-6814-2020-03-28-16-41-16.png" alt="image-1643x924" width={1643} height={924} />
+
+抽一个下午事件，把这些quote用户好好分析下，我们就能迅速洞察出客户在发送询盘时到底有哪些真实痛点。
+
+## 自定义转化漏斗
+
+假如客户在我们网站上发询盘的流程是这样的：
+
+1. 进入产品页面 → 2. 将若干个产品添加到Quote购物车 → 3. 进入quote页填盘信息 → 4. 发送成功并进入感谢页 → 5. 继续浏览
+
+那完全可以把上述的每个过程打上如下标记：
+
+product → addCart → quote → success → keepExplore
+
+最后在Lucky Orange中下图位置，就可以把所有标签都添加进去：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551541-2568-2020-03-28-16-48-48.png" alt="image-unknown" width={400} height={400} />
+
+添加好之后的效果是这样的：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551529-2206-2020-03-28-17-07-18.png" alt="image-1643x924" width={1643} height={924} />
+
+有了这样的数据，那网站各个层级的转化率就一目了然，哪个层级出了问题，都可以点过去，做深度分析。
+
+## 邮件推送
+
+Lucky Orange的邮件提示还挺有意思：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551538-8419-2020-03-28-17-12-45.png" alt="image-924x1536" width={924} height={1536} />
+
+只要使用Lucky Orange，它隔一段时间就会给我们发一次分析邮件，其中Lucky Orange会告诉我，我的网站在每天的几点（注意时区）访客较多。
+
+那我这段时间就可以什么也不做，专心在网站上观察用户实时行为，并和客户在线聊天。
+
+当然啦，如果不想烦，也可以在Lucky Orange的后台设置下邮件推送频率：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551538-7842-2020-03-28-17-19-07.png" alt="image-1643x924" width={1643} height={924} />
+
+## 屏蔽IP
+
+用Lucky Orange做行为分析最蛋疼的一点就在于，某天我们发现一个客户的行为特别反常，然后我们就跟踪这个客户，做了半天观察，反复观摩其动作，甚至对他某些行为感到震惊……
+
+最后发现这个客户就是自己。。
+
+做行为分析，没什么比分析了半天最后分析到自己头上还要无语的事了，所以我们必须把自己的常用学术上网IP给屏蔽掉。
+
+屏蔽方法很简单，首先在Google中搜索“my ip”：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551529-5893-2020-03-28-17-23-57.png" alt="image-1643x924" width={1643} height={924} />
+
+然后进入Lucky Orange的后台，在如下图所示对应位置添加需要屏蔽的IP：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551536-1360-2020-03-28-17-25-07.png" alt="image-1643x924" width={1643} height={924} />
+
+然后把自己IP数字粘贴进去，添加即可：
+
+<Image src="https://www.xunpanziyou.com/wp-content/uploads/2020/06/1592551529-4441-2020-03-28-17-26-28.png" alt="image-1262x462" width={1262} height={462} />
+
+如果你的学术上网工具有多个IP，且你日常访问自己网站时也会频繁改动IP，那我建议可以按照上述方法，把所有IP都添加进去。
+
+---
+
+好了，以上就是我用Lucky Orange以来的部分经验，我写完了，该你写了，在评论区留个言吧↓
+```

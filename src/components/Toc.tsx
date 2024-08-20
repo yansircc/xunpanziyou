@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type TocProps = {
@@ -9,19 +10,24 @@ type TocProps = {
 
 export default function Toc({ toc }: TocProps) {
   return (
-    <div className="flex flex-col space-y-2">
-      {toc.map((item) => (
-        <div key={item.value} className="flex items-center space-x-2">
-          <div className="flex items-center space-x-1">
-            <div className="flex h-4 w-4 items-center justify-center rounded-full bg-zinc-200 dark:bg-zinc-500">
-              <span className="text-zinc-800 dark:text-zinc-100">
-                {item.depth}
+    <nav className="toc not-prose bg-zinc-50 p-6 font-medium dark:bg-zinc-900">
+      <ul className="space-y-3">
+        {toc.map((item) => (
+          <li key={item.value} className={`pl-${item.depth * 4}`}>
+            <Link
+              href={`#${item.value.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, "")}`}
+              className="group flex items-center transition-colors duration-200 ease-in-out hover:text-zinc-600"
+            >
+              <span className="group-hover:text-zinc-6000 mr-2 text-sm text-zinc-400 dark:group-hover:text-zinc-300">
+                {item.depth === 1 ? "#" : item.depth === 2 ? "##" : "###"}
               </span>
-            </div>
-            <div className="text-zinc-800 dark:text-zinc-100">{item.value}</div>
-          </div>
-        </div>
-      ))}
-    </div>
+              <span className="text-zinc-700 group-hover:text-zinc-900 dark:text-zinc-300 dark:group-hover:text-zinc-100">
+                {item.value}
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }

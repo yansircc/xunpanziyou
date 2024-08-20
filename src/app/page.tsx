@@ -4,14 +4,14 @@ import clsx from "clsx";
 
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
-import { AffCard } from "@/components/AffCard";
+import { AffCards } from "@/components/AffCard";
 import { Container } from "@/components/Container";
 import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from "@/components/SocialIcons";
+  WechatIcon,
+  TiktokIcon,
+  XiaohongshuIcon,
+  GithubIcon,
+} from "@/consts/social";
 import logoAirbnb from "@/images/logos/airbnb.svg";
 import logoFacebook from "@/images/logos/facebook.svg";
 import logoPlanetaria from "@/images/logos/planetaria.svg";
@@ -23,6 +23,7 @@ import image4 from "@/images/photos/image-4.jpg";
 import image5 from "@/images/photos/image-5.jpg";
 import { type ArticleWithSlug, getAllArticles } from "@/lib/articles";
 import { formatDate } from "@/lib/formatDate";
+import SimpleH2Layout from "@/components/SimpleH2Layout";
 
 function MailIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
@@ -93,7 +94,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>深入阅读</Card.Cta>
     </Card>
   );
 }
@@ -115,26 +116,54 @@ function Newsletter() {
   return (
     <form
       action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+      className="rounded-2xl border border-zinc-100 p-8 dark:border-zinc-700/40"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
+        <span className="ml-3">订阅颜sir日后所有文章</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
+        你订阅后，我会把我收获同步给你，包括但不限于：
       </p>
-      <div className="mt-6 flex">
+      <ul className="dark:text-zinc-4000 mt-2 list-inside list-disc text-sm text-zinc-600">
+        <li>询盘自由的策略</li>
+        <li>我5年的建站经验</li>
+        <li>投广告的私料</li>
+        <li>数据追踪的干货</li>
+        <li>我的常用工具</li>
+        <li>我的私人生活（maybe）</li>
+        <li>我的赚钱心得</li>
+      </ul>
+      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+        不是铁杆粉丝就不要订阅了，每次群发邮件都要花钱的，帮我省省。
+      </p>
+      <div className="mt-6 flex flex-col space-y-2">
+        <input
+          type="text"
+          placeholder="怎么称呼你？"
+          aria-label="First Name"
+          required
+          className="dark:focus:ring-indigo-40/10 min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-indigo-400"
+        />
         <input
           type="email"
-          placeholder="Email address"
+          placeholder="你最常用的邮箱"
           aria-label="Email address"
           required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
+          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-indigo-400 dark:focus:ring-indigo-400/10"
         />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
+        <div className="flex items-center gap-2">
+          <input type="checkbox" id="agree" />
+          <label htmlFor="agree" className="text-sm text-zinc-600">
+            等下你会收到一封确认邮件，在你没确认前，我不会给你推消息。
+          </label>
+        </div>
+        <Button type="submit" className="flex-none">
+          有干货通知我
         </Button>
+        <p className="dark:text-zinc-4000 mt-2 text-sm text-zinc-600">
+          你的信息我会严格保密，而且，订阅后可以随时取消，请放心。
+        </p>
       </div>
     </form>
   );
@@ -287,40 +316,55 @@ export default async function Home() {
             我也喜欢和朋友交流技术问题和分享自己的经验。
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
             <SocialLink
               href="#"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
+              aria-label="Follow on Wechat"
+              icon={WechatIcon}
+              className="h-6 w-6 grayscale filter transition-colors duration-300 hover:filter-none dark:text-zinc-100"
             />
             <SocialLink
               href="#"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
+              aria-label="Follow on Tiktok"
+              icon={TiktokIcon}
+              className="h-6 w-6 grayscale filter transition-colors duration-300 hover:filter-none dark:text-zinc-100"
             />
             <SocialLink
               href="#"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
+              aria-label="Follow on Xiaohongshu"
+              icon={XiaohongshuIcon}
+              className="h-6 w-6 grayscale filter transition-colors duration-300 hover:filter-none dark:text-zinc-100"
+            />
+            <SocialLink
+              href="#"
+              aria-label="Follow on Github"
+              icon={GithubIcon}
+              className="h-6 w-6 grayscale filter transition-colors duration-300 hover:filter-none dark:text-zinc-100"
             />
           </div>
         </div>
       </Container>
       <Photos />
-      <AffCard />
-      <Container className="mt-24 md:mt-28">
+      <SimpleH2Layout
+        title="严选工具"
+        description="下面都是我用过的工具，每一个都经过十几轮试错，大浪淘沙剩下来的。"
+      >
+        <AffCards />
+      </SimpleH2Layout>
+      <SimpleH2Layout
+        title="最新文章"
+        description="下面是我最新文章，每篇都算得上呕心沥血，希望你也能有所收获。"
+      >
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
+          <div className="max-w-[450px] space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
-            <Resume />
           </div>
         </div>
-      </Container>
+      </SimpleH2Layout>
     </>
   );
 }
