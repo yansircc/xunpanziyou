@@ -1,6 +1,7 @@
 import path from "path";
 import fs from "fs/promises";
 import { Client } from "minio";
+import errorHandler from "@/lib/errorHandler";
 
 const client = new Client({
   endPoint: "objectstorageapi.bja.sealos.run",
@@ -70,9 +71,11 @@ const processImageInContent = async (
         failedReplacements.push({
           file: fileName,
           imgUrl,
-          error: (error as Error).message,
+          error: errorHandler(error),
         });
-        console.error(`Failed to process image ${imgUrl}: ${error}`);
+        console.error(
+          `Failed to process image ${imgUrl}: ${errorHandler(error)}`,
+        );
       }
     }
     matchesCount++;

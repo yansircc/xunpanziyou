@@ -41,6 +41,11 @@ const nextConfig = {
         hostname: "www.xunpanziyou.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "objectstorageapi.bja.sealos.run",
+        port: "",
+      },
     ],
   },
 };

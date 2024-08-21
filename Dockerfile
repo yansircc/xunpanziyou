@@ -6,7 +6,6 @@ FROM node:current-alpine3.20 AS base
 FROM base AS dev
 WORKDIR /app/dev
 COPY package.json .
-COPY prisma ./prisma
 # RUN bun install
 RUN npm install
 
@@ -14,7 +13,6 @@ RUN npm install
 FROM base AS prod
 WORKDIR /app/prod
 COPY package.json .
-COPY prisma ./prisma
 # RUN bun install --production
 RUN npm install --production
 
@@ -23,7 +21,7 @@ FROM base AS prerelease
 WORKDIR /app/prerelease
 COPY . .
 COPY --from=dev /app/dev/node_modules ./node_modules
-ENV DATABASE_URL="postgresql://postgres:n9456m76@bja.sealos.run:45405/?directConnection=true"
+ENV NEXT_PUBLIC_SITE_URL="https://www.xunpanziyou.com"
 # RUN bun run build
 ENV NODE_ENV=production
 RUN npm run build
@@ -32,11 +30,11 @@ RUN npm run build
 FROM base AS release
 WORKDIR /app
 COPY --from=prod /app/prod/node_modules ./node_modules
-COPY --from=prerelease /app/prerelease/public ./public
+# COPY --from=prerelease /app/prerelease/public ./public
 COPY --from=prerelease /app/prerelease/package.json ./package.json
-COPY --from=prerelease /app/prerelease/next.config.js ./next.config.js
+COPY --from=prerelease /app/prerelease/next.config.mjs ./next.config.mjs
 COPY --from=prerelease /app/prerelease/.next ./.next
-COPY --from=prerelease /app/prerelease/src/env.js ./src/env.js
+# COPY --from=prerelease /app/prerelease/src/env.js ./src/env.js
 # COPY --from=prerelease /app/tailwind.config.js ./tailwind.config.js
 # COPY --from=prerelease /app/tsconfig.json ./tsconfig.json
 

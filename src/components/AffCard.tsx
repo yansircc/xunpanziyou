@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 import { Card } from "@/components/Card";
 import logoHostinger from "@/images/logos/hostinger.svg";
@@ -11,31 +11,31 @@ const AffiliateLinks = [
   {
     title: "Hostinger",
     description: "我用过速度最快的空间，裸站速度0.6s！太猛了",
-    logo: logoHostinger,
+    logo: logoHostinger as StaticImageData,
     link: "/specs101",
   },
   {
     title: "Cloudflare",
     description: "能被称为赛博活佛的没几个，Cloudflare算一个",
-    logo: logoCloudflare,
+    logo: logoCloudflare as StaticImageData,
     link: "https://www.cloudflare.com/",
   },
   {
     title: "Namesilo",
     description: "老牌域名申请平台，购买域名不像国内那么麻烦",
-    logo: logoNamesilo,
+    logo: logoNamesilo as StaticImageData,
     link: "https://www.namesilo.com/register.php?rid=8c41255pm",
   },
   {
     title: "JustMySocks",
     description: "是我用过速度最快最稳定的F.Q.工具，没有之一",
-    logo: logoJustMySocks,
+    logo: logoJustMySocks as StaticImageData,
     link: "https://justmysocks3.net/members/aff.php?aff=7988",
   },
   {
     title: "Nitropack",
     description: "本网站用的就是它，谷歌移动端分数直接拉爆",
-    logo: logoNitropack,
+    logo: logoNitropack as StaticImageData,
     link: "https://nitropack.io/#KCEYBP",
   },
 ];

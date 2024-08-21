@@ -32,4 +32,4 @@ coverage
 .vscode
 .history
 
-src/server/*
+src/server/replace-img.ts
