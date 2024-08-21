@@ -42,7 +42,7 @@ export function Footer() {
                 <a
                   href="https://www.imiker.com"
                   target="_blank"
-                  className="text-indigo-500 hover:text-indigo-600 dark:text-indigo-400 dark:hover:text-indigo-300"
+                  className="hover:font-medium dark:hover:font-medium"
                 >
                   南京米课网络信息技术有限公司
                 </a>{" "}

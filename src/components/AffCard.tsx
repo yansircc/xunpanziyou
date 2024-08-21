@@ -53,7 +53,7 @@ export function AffCards() {
           </div>
           <div className="flex flex-col">
             <h2 className="text-zinc-8000 text-base font-semibold dark:text-zinc-100">
-              <Card.Link href={project.link} target="_blank">
+              <Card.Link href={project.link} target="_blank" prefetch={false}>
                 {project.title}
               </Card.Link>
             </h2>

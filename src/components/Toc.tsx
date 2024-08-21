@@ -15,7 +15,7 @@ export default function Toc({ toc }: TocProps) {
         {toc.map((item) => (
           <li key={item.value} className={`pl-${item.depth * 4}`}>
             <Link
-              href={`#${item.value.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, "")}`}
+              href={`#${item.value.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5-]+/g, "")}`}
               className="group flex items-center transition-colors duration-200 ease-in-out hover:text-zinc-600"
             >
               <span className="group-hover:text-zinc-6000 mr-2 text-sm text-zinc-400 dark:group-hover:text-zinc-300">
