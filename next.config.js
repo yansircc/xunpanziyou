@@ -21,6 +21,8 @@ const nextConfig = {
       },
     ],
   },
+  output: "standalone",
+  reactStrictMode: true,
 };
 
 const withMDX = nextMDX({
